@@ -1,0 +1,76 @@
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+h2{
+  margin: 0;
+}
+
+.row div p {
+    padding: 5px;
+    text-align: left;
+}
+
+.row div div  {
+  border: 1px solid black;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.row > div {
+  background-color: #A52A2A;
+  margin-right: 1.5%;
+  margin-left: 1%;
+  font-family: Helvetica;
+  color: white;
+  text-align: right;
+}
+
+#chicken {
+  background-color: green;
+}
+
+#beef {
+  background-color: blue;
+}
+
+#sushi {
+  background-color: grey;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-lg-3 {
+    width: 30%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+  .col-md-1, .col-md-3 {
+    float: left;
+    border: 1px solid black;
+    margin-top: 2%;
+  }
+  .col-md-1 {
+    width: 47.5%;
+  }
+  .col-md-3 {
+    width: 97.5%;
+  }
+}
